@@ -1,0 +1,14 @@
+AllCops:
+  TargetRubyVersion: 2.4
+
+Style/Documentation:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 200
