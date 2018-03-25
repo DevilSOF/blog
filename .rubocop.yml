@@ -1,5 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.4
+  Exclude:
+    - 'db/schema.rb'
 
 Style/Documentation:
   Enabled: false
@@ -12,3 +14,6 @@ Metrics/LineLength:
 
 Metrics/ClassLength:
   Max: 200
+
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
