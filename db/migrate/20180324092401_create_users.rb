@@ -3,7 +3,7 @@
 class CreateUsers < ActiveRecord::Migration[5.1]
   def change
     create_table :users do |t|
-      t.boolean :admin
+      t.boolean :admin, default: 0
       t.string :username
       t.string :password
       t.string :email
