@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :comment do
-    content { Faker::Lorem.sentence }
+    content { Faker::Markdown.random }
     user
     post
   end
