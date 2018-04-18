@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :post do
-    title { Faker::Lorem.word }
+    title { Faker::Lorem.sentence }
     content { Faker::Markdown.random }
     user
     category
