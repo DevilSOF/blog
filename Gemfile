@@ -7,6 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'devise', '~> 4.4', '>= 4.4.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
@@ -39,9 +40,9 @@ group :development, :test do
   # and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '~> 2.13'
   gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'faker', '~> 1.8', '>= 1.8.7'
-  gem 'capybara', '~> 2.13'
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'rubocop', '~> 0.54', require: false
   gem 'selenium-webdriver'
