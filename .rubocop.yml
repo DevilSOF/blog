@@ -17,3 +17,6 @@ Metrics/ClassLength:
 
 Layout/SpaceInsideHashLiteralBraces:
   Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
