@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Seeds for Category table
 Category.destroy_all
+
 Category.create(
   [
     {name: 'Vacation'},
@@ -14,3 +14,11 @@ Category.create(
     {name: 'Space'}
   ]
 )
+
+if Rails.env.development?
+  User.create!(
+    email: 'admin@example.com',
+    password: 'password',
+    password_confirmation: 'password'
+  )
+end
