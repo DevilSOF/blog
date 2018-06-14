@@ -1,7 +1,8 @@
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
   Exclude:
     - 'db/schema.rb'
+    - '**/*.erb'
 
 Style/Documentation:
   Enabled: false
