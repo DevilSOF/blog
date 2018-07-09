@@ -12,6 +12,10 @@ bin-rspec:
 
 provision: bundle db-migrate
 
+	
+rake-routes-user:
+	${DOCKER_COMPOSE_RUN} -e "RAILS_ENV=${RAILS_ENV}" app bundle exec rake routes | grep user
+
 up:
 	rm -f tmp/pids/server.pid && ${DOCKER_COMPOSE} up
 
