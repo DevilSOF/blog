@@ -1,0 +1,22 @@
+<br>
+<p class="text-center font-weight-bold">All Posts</p>
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr class="text-center">
+      <th>Title</th>
+      <th>Content</th>
+      <th>Username</th>
+      <th>Category</th>
+      <th colspan="2">Action</th>
+    </tr>
+  </thead>
+    <tr>
+      <td><%= @post.title %></td>
+      <td><%= @post.content %></td>
+      <td><%= @post.user.username %></td>
+      <td><%= @post.category.name %></td>
+      <td class="text-center"><%= link_to 'Edit', edit_post_path(@post), class: 'btn btn-outline-success btn-sm' %></td>
+      <td class="text-center"><%= link_to 'Delete', post_path(@post), data: {confirm: "Are you sure?"}, method: :delete, class: 'btn btn-outline-danger btn-sm'%></td>
+    </tr>
+</table>
+<p><%= link_to "Back", posts_path, class: 'btn btn-secondary btn-sm' %></p>
