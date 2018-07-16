@@ -27,7 +27,7 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 4.10'
   gem 'faker', '~> 1.8', '>= 1.8.7'
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
-  gem 'rubocop', '~> 0.57.1', require: false
+  gem 'rubocop', '~> 0.58.1', require: false
   gem 'selenium-webdriver', '~> 3.12'
 end
 
