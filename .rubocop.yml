@@ -21,3 +21,9 @@ Layout/SpaceInsideHashLiteralBraces:
 
 Metrics/MethodLength:
   Max: 20
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'config/routes.rb'
+    - 'db/migrate/*'
